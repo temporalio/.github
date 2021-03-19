@@ -1,27 +1,26 @@
-<!--- Provide a general summary of your changes in the Title above -->
+<!--- Reminder to change the title 👆 -->
 
-## Description
-<!--- Describe your changes in detail -->
+## Description, Motivation and Context
 
-## Motivation and Context
-<!--- Why is this change required? What problem does it solve? -->
-<!--- If it fixes an open issue, please link to the issue here. -->
-
+<!--- For External Contributors -->
 > Thanks for opening a PR to our repos! If it is a significant code change, please make sure there is an
-> opened issue where we have discussed and accepted the idea before filing this PR.
+> opened issue where we have accepted the idea before filing this PR.
+
+<!--- For All  Contributors -->
+
+<!--- What was changed? Is this a bugfix or new feature? Include screenshots if relevant -->
+What was changed:
+
+<!--- Why is this change required? What problem does it solve? -->
+Motivation & Context:
+
+<!--- If it fixes an open issue, please link to the issue here. -->
+Closes issue: 
 
 ## How has this been tested?
-<!--- Please describe in detail how you tested your changes. -->
-<!--- Include details of your testing environment, tests ran to see how -->
-<!--- your change affects other areas of the code, etc. -->
+<!--- Please describe how you tested your changes/how we can test them -->
 
-## Screenshots/Terminal Output (if appropriate):
 
-## Types of changes
-<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
 ## Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
