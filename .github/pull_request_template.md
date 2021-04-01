@@ -1,11 +1,9 @@
-<!--- Reminder to change the title 👆 -->
+<!--- Note to EXTERNAL Contributors -->
+<!-- Thanks for opening a PR! 
+If it is a significant code change, please **make sure there is an open issue** for this. 
+We work best with you when we have accepted the idea first before you code. -->
 
-<!--- For External Contributors -->
-<!-- Thanks for opening a PR to our repos! If it is a significant code change,
-please make sure there is an  opened issue where we have accepted the idea
-before filing this PR. -->
-
-<!--- For All Contributors -->
+<!--- For ALL Contributors 👇 -->
 
 ## What was changed:
 <!-- Describe what has changed in this PR -->
@@ -13,12 +11,14 @@ before filing this PR. -->
 ## Why?
 <!-- Tell your future self why have you made these changes -->
 
-## Closes issue: 
-<!--- If it fixes an open issue, please link to the issue here -->
+## Checklist
+<!--- add/delete as needed --->
 
-## How has this been tested?
+1. Closes issue: 
+
+2. How was this tested:
 <!--- Please describe how you tested your changes/how we can test them -->
 
-
-## Any docs updates needed?
-<!--- update docs/README in this repo if applicable, or point out where to update docs.temporal.io -->
+3. Any docs updates needed?
+<!--- update README if applicable
+      or point out where to update docs.temporal.io -->
