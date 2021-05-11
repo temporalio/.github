@@ -5,7 +5,7 @@ We work best with you when we have accepted the idea first before you code. -->
 
 <!--- For ALL Contributors 👇 -->
 
-## What was changed:
+## What was changed
 <!-- Describe what has changed in this PR -->
 
 ## Why?
