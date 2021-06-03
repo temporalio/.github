@@ -14,7 +14,7 @@ We work best with you when we have accepted the idea first before you code. -->
 ## Checklist
 <!--- add/delete as needed --->
 
-1. Closes issue: 
+1. Closes <!-- add issue number here -->
 
 2. How was this tested:
 <!--- Please describe how you tested your changes/how we can test them -->
