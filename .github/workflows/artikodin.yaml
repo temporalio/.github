@@ -26,7 +26,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: false
 
-
 jobs:
   handle:
     name: Run Artikodin handler
@@ -46,6 +45,8 @@ jobs:
         with:
           app-id: ${{ secrets.ARTIKODIN_CONTENTS_APP_ID }}
           private-key: ${{ secrets.ARTIKODIN_CONTENTS_PRIVATE_KEY }}
+          owner: temporalio
+          repositories: artikodin
 
       - name: Checkout Artikodin
         if: ${{ steps.app-token.outputs.token != '' }}
@@ -55,13 +56,12 @@ jobs:
           ref: main
           token: ${{ steps.app-token.outputs.token }}
           persist-credentials: false
-          sparse-checkout: request
-          path: temporalio/artikodin
 
       - name: Synchronize authorization
         if: ${{ steps.app-token.outputs.token != '' }}
-        uses: ./temporalio/artikodin/request
+        uses: ./request
         with:
+          skip-checkout: true
           contents-app-id: ${{ secrets.ARTIKODIN_CONTENTS_APP_ID }}
           contents-private-key: ${{ secrets.ARTIKODIN_CONTENTS_PRIVATE_KEY }}
           controller-app-id: ${{ secrets.ARTIKODIN_CONTROLLER_APP_ID }}
