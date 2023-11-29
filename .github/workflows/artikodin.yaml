@@ -35,7 +35,12 @@ jobs:
 
     steps:
       - name: Synchronize authorization
-        if: ${{ secrets.ARTIKODIN_CONTROLLER_APP_ID != '' && secrets.ARTIKODIN_CONTROLLER_PRIVATE_KEY != '' }}
+        env:
+          ARTIKODIN_CONTROLLER_APP_ID: ${{ secrets.ARTIKODIN_CONTROLLER_APP_ID }}
+          ARTIKODIN_CONTROLLER_PRIVATE_KEY: ${{ secrets.ARTIKODIN_CONTROLLER_PRIVATE_KEY }}
+          ARTIKODIN_CONTENTS_APP_ID: ${{ secrets.ARTIKODIN_CONTENTS_APP_ID }}
+          ARTIKODIN_CONTENTS_PRIVATE_KEY: ${{ secrets.ARTIKODIN_CONTENTS_PRIVATE_KEY }}
+        if: ${{ env.ARTIKODIN_CONTROLLER_APP_ID != '' && env.ARTIKODIN_CONTROLLER_PRIVATE_KEY != '' && env.ARTIKODIN_CONTENTS_APP_ID != '' && env.ARTIKODIN_CONTENTS_PRIVATE_KEY != '' }}
         uses: temporalio/artikodin/request@main
         with:
           contents-app-id: ${{ secrets.ARTIKODIN_CONTENTS_APP_ID }}
