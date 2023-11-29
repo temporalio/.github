@@ -1,0 +1,49 @@
+name: Artikodin pull-request handler
+
+
+on:
+  # Runs on a pull request for the main branch
+  pull_request:
+    types:
+      # Default events
+      - opened
+      - synchronize
+      - reopened
+      # But we also want to make sure a potential
+      # exception request pull request is getting
+      # closed if any was open
+      - closed
+    branch:
+      - main
+
+  # Runs on a merge group build
+  merge_group:
+    types:
+      - checks_requested
+
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: false
+
+
+jobs:
+  handle:
+    name: Run Artikodin handler
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Synchronize authorization
+        if: ${{ secrets.ARTIKODIN_CONTROLLER_APP_ID != '' && secrets.ARTIKODIN_CONTROLLER_PRIVATE_KEY != '' }}
+        uses: temporalio/artikodin/request@main
+        with:
+          contents-app-id: ${{ secrets.ARTIKODIN_CONTENTS_APP_ID }}
+          contents-private-key: ${{ secrets.ARTIKODIN_CONTENTS_PRIVATE_KEY }}
+          controller-app-id: ${{ secrets.ARTIKODIN_CONTROLLER_APP_ID }}
+          controller-private-key: ${{ secrets.ARTIKODIN_CONTROLLER_PRIVATE_KEY }}
+          target-repository: "${{ github.repository }}"
+          target-pull-request: "${{ github.event.pull_request.number }}"
+          target-merge-group-head-ref: "${{ github.event.merge_group.head_ref }}"
+          target-git-sha: "${{ github.event.pull_request.head.sha || github.event.merge_group.head_sha }}"
+          closing-pr: ${{ github.event.action == 'closed' }}
