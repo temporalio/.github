@@ -49,7 +49,7 @@ jobs:
 
       - name: Checkout Artikodin
         if: ${{ steps.app-token.outputs.token != '' }}
-        runs: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           repository: temporalio/artikodin
           ref: main
