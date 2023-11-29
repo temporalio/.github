@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check if Artikodin is available
+      - name: Getting an app token if Artikodin is available
         env:
           ARTIKODIN_CONTROLLER_APP_ID: ${{ secrets.ARTIKODIN_CONTROLLER_APP_ID }}
           ARTIKODIN_CONTROLLER_PRIVATE_KEY: ${{ secrets.ARTIKODIN_CONTROLLER_PRIVATE_KEY }}
