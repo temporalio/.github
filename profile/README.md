@@ -13,7 +13,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
 ## Resources
 - [Website](https://temporal.io/)
 - [Getting to know Temporal](https://youtu.be/wIpz4ioK0gI) (video)
-- [Getting Started](https://learn.temporal.io/getting_started/) (course)
+- [Getting Started](https://learn.temporal.io/getting_started/) (tutorials)
 - [Slack Community](https://t.mp/slack) 
 - [Documentation](https://docs.temporal.io/)
 
