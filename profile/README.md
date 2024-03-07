@@ -1,4 +1,4 @@
-**Temporal** delivers an open-source durable execution solution that abstracts away the complexity of building scalable, reliable distributed systems. It presents a development abstraction that preserves complete application state so that in the case of a host or software failure it can seamlessly migrate execution to another machine. 
+**Temporal** delivers an open-source durable execution system that abstracts away the complexity of building scalable, reliable distributed systems. It presents a development abstraction that preserves complete application state so that in the case of a host or software failure it can seamlessly migrate execution to another machine. 
 
 ## Developing with Temporal
 Temporal allows you to code for resilience in your applications and eliminates complex failure, error handling, and failure handling logic from applications, so you can focus on what matters – delivering reliable systems, faster. 
