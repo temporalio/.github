@@ -27,17 +27,26 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
 [![@temporalio on X](https://img.shields.io/badge/%40temporalio-black?logo=x)](https://x.com/temporalio)
 
 ## Pinned
-[![Temporal Service](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=temporal&show_icons=true&theme=transparent)](https://github.com/temporalio/temporal)
-[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&theme=transparent&description_lines_count=1)](https://github.com/temporalio/cli)
-
-[![Temporal Go SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=transparent)](https://github.com/temporalio/sdk-go)
-[![Temporal Java SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=transparent)](https://github.com/temporalio/sdk-java)
-
-[![Temporal TypeScript SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=transparent)](https://github.com/temporalio/sdk-typescript)
-[![Python SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=transparent)](https://github.com/temporalio/sdk-python)
-
-[![Temporal .NET SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=transparent)](https://github.com/temporalio/sdk-dotnet)
-[![Temporal Ruby SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=transparent)](https://github.com/temporalio/sdk-ruby)
+[![Temporal Service](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=temporal&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/temporal#gh-light-mode-only)
+[![Temporal Service](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=temporal&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/temporal#gh-dark-mode-only)
+[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=default#gh-light-mode-only)](https://github.com/temporalio/cli#gh-light-mode-only)
+[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/cli#gh-dark-mode-only)
+[![Temporal Go SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-go#gh-light-mode-only)
+[![Temporal Go SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-go#gh-dark-mode-only)
+[![Temporal Java SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-java#gh-light-mode-only)
+[![Temporal Java SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-java#gh-dark-mode-only)
+[![Temporal TypeScript SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-typescript#gh-light-mode-only)
+[![Temporal TypeScript SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-typescript#gh-dark-mode-only)
+[![Temporal Python SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-python#gh-light-mode-only)
+[![Temporal Python SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-python#gh-dark-mode-only)
+[![Temporal .NET SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-dotnet#gh-light-mode-only)
+[![Temporal .NET SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-dotnet#gh-dark-mode-only)
+[![Temporal Ruby SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-ruby#gh-light-mode-only)
+[![Temporal Ruby SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-ruby#gh-dark-mode-only)
+[![Temporal PHP SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-php#gh-light-mode-only)
+[![Temporal PHP SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-php#gh-dark-mode-only)
+[![Temporal Core SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-core&show_icons=true&description_lines_count=1&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-core#gh-light-mode-only)
+[![Temporal Core SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-core&show_icons=true&description_lines_count=1&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-core#gh-dark-mode-only)
 
 
 
