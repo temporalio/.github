@@ -1,5 +1,3 @@
-# temporalio-readme-prototype
-
 **Temporal** delivers an open-source Durable Execution platform that abstracts away the complexity of building scalable, reliable distributed systems. It presents a development abstraction that preserves complete application state so that in the case of a host or software failure it can seamlessly migrate execution to another machine.
 
 ## 📝 Got 5 minutes? Help us make Temporal even better!
