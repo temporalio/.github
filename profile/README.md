@@ -24,11 +24,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
 [![Temporal on LinkedIn](https://img.shields.io/badge/Temporal-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/company/temporal-technologies/posts/?feedView=all)
 [![@temporalio on X](https://img.shields.io/badge/%40temporalio-black?logo=x)](https://x.com/temporalio)
 
-## Pinned
-[![Temporal Service](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=temporal&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/temporal#gh-light-mode-only)
-[![Temporal Service](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=temporal&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/temporal#gh-dark-mode-only)
-[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=default#gh-light-mode-only)](https://github.com/temporalio/cli#gh-light-mode-only)
-[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/cli#gh-dark-mode-only)
+## Featured Repositories
 [![Temporal Go SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-go#gh-light-mode-only)
 [![Temporal Go SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-go#gh-dark-mode-only)
 [![Temporal Java SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-java#gh-light-mode-only)
@@ -43,8 +39,6 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
 [![Temporal Ruby SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-ruby#gh-dark-mode-only)
 [![Temporal PHP SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-php#gh-light-mode-only)
 [![Temporal PHP SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-php#gh-dark-mode-only)
-[![Temporal Core SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-core&show_icons=true&description_lines_count=1&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-core#gh-light-mode-only)
-[![Temporal Core SDK](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=sdk-core&show_icons=true&description_lines_count=1&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-core#gh-dark-mode-only)
-
-
+[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=default#gh-light-mode-only)](https://github.com/temporalio/cli#gh-light-mode-only)
+[![Temporal CLI](https://github-readme-stats.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/cli#gh-dark-mode-only)
 
