@@ -10,6 +10,17 @@ Thousands of companies use Temporal today for both mission-critical and basic wo
 
 Every message on Twilio, every Coinbase transaction, and every Snap story uses Temporal.
 
+## Temporal Code Exchange
+The [Temporal Code Exchange](https://temporal.io/code-exchange) is a community-driven hub for Workflow samples, example applications, and innovative ideas to kick start your Temporal development. Whether you're exploring new use cases or sharing your own expertise, this is the place to collaborate, learn, and build with your peers. 
+
+Get involved today:
+
+* Browse ready-to-use Workflows
+* Contribute your own solutions
+* Collaborate with fellow developers
+
+Check it out! https://temporal.io/code-exchange
+
 ## Resources
 - [Website](https://temporal.io/)
 - [Getting to know Temporal](https://youtu.be/wIpz4ioK0gI) (video)
