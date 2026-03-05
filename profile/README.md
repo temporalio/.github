@@ -1,7 +1,7 @@
-**Temporal** delivers an open-source Durable Execution platform that abstracts away the complexity of building scalable, reliable distributed systems. It presents a development abstraction that preserves complete application state so that in the case of a host or software failure it can seamlessly migrate execution to another machine.
+**Temporal** delivers an open-source [Durable Execution](https://temporal.io/blog/what-is-durable-execution) platform that abstracts away the complexity of building scalable, reliable distributed systems. It presents a development abstraction that preserves complete application state, enabling your application to automatically overcome crashes and service outages. In the case of a hardware failure, it can seamlessly migrate execution to another machine.
 
 ## Developing with Temporal
-Temporal allows you to code for resilience in your applications and eliminates complex failure, error handling, and failure handling logic from applications, so you can focus on what matters – delivering reliable systems, faster. 
+Temporal allows you to code for resilience in your applications and eliminates complex failure and error handling logic in your code, so you can focus on what matters – delivering reliable systems, faster. 
 
 More explicitly, Temporal accelerates development by eliminating the need to write custom code for timers, event sourcing, state checkpointing, retries, and timeouts. It also simplifies your infrastructure by eliminating the need for queues, pub/sub systems, and schedulers. 
 
