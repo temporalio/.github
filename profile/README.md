@@ -23,14 +23,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
 [![@temporalio on X](https://img.shields.io/badge/%40temporalio-black?logo=x)](https://x.com/temporalio)
 
 ## Featured Repositories
-<a href="https://github.com/temporalio/sdk-go" style="text-decoration: none">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=dark">
-    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
-    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
-  </picture>
-</a>
-
+<a href="https://github.com/temporalio/sdk-go"><picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=dark"><source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true"><img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true"></picture></a>
 <a href="https://github.com/temporalio/sdk-java" style="text-decoration: none">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=dark">
