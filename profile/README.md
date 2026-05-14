@@ -25,9 +25,9 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
 ## Featured Repositories
 <a href="https://github.com/temporalio/sdk-go">
   <picture>
-    <source media="prefers-color-scheme: dark" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
-    <source media="prefers-color-scheme: light" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
-    <img alt="GitHub Stats" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
+    <source media="prefers-color-scheme: dark" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=github_dark#gh-dark-mode-only">
+    <source media="prefers-color-scheme: light" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=default#gh-light-mode-only">
+    <img alt="GitHub Stats" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=github_dark#gh-dark-mode-only">
   </picture>
 </a>
 [![Temporal Java SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-java#gh-light-mode-only)
