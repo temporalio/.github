@@ -30,6 +30,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-java">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=dark">
@@ -37,6 +38,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-typescript">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=dark">
@@ -44,6 +46,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-python">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=dark">
@@ -51,6 +54,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-dotnet">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=dark">
@@ -58,6 +62,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-ruby">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=dark">
@@ -65,6 +70,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-rust">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true&theme=dark">
@@ -72,6 +78,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/sdk-php">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=dark">
@@ -79,6 +86,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/cli">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&theme=dark">
@@ -86,6 +94,7 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
     <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true">
   </picture>
 </a>
+
 <a href="https://github.com/temporalio/ai-cookbook">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=ai-cookbook&show_icons=true&theme=dark">
