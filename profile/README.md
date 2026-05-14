@@ -27,24 +27,69 @@ Every message on Twilio, every Coinbase transaction, and every Snap story uses T
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true&theme=dark">
     <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
-    <img alt="GitHub Stats" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-go&show_icons=true">
   </picture>
 </a>
-[![Temporal Java SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-java#gh-light-mode-only)
-[![Temporal Java SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-java#gh-dark-mode-only)
-[![Temporal TypeScript SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-typescript#gh-light-mode-only)
-[![Temporal TypeScript SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-typescript#gh-dark-mode-only)
-[![Temporal Python SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-python#gh-light-mode-only)
-[![Temporal Python SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-python#gh-dark-mode-only)
-[![Temporal .NET SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-dotnet#gh-light-mode-only)
-[![Temporal .NET SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-dotnet#gh-dark-mode-only)
-[![Temporal Ruby SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-ruby#gh-light-mode-only)
-[![Temporal Ruby SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-ruby#gh-dark-mode-only)
-[![Temporal Rust SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-rust#gh-light-mode-only)
-[![Temporal Rust SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-rust#gh-dark-mode-only)
-[![Temporal PHP SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/sdk-php#gh-light-mode-only)
-[![Temporal PHP SDK](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/sdk-php#gh-dark-mode-only)
-[![Temporal CLI](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=default#gh-light-mode-only)](https://github.com/temporalio/cli#gh-light-mode-only)
-[![Temporal CLI](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&description_lines_count=1&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/cli#gh-dark-mode-only)
-[![Temporal AI Cookbook](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=ai-cookbook&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/temporalio/ai-cookbook#gh-light-mode-only)
-[![Temporal AI_Cookbook](https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=ai-cookbook&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/temporalio/ai-cookbook#gh-dark-mode-only)
+<a href="https://github.com/temporalio/sdk-java">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-java&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/sdk-typescript">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-typescript&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/sdk-python">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-python&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/sdk-dotnet">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-dotnet&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/sdk-ruby">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-ruby&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/sdk-rust">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-rust&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/sdk-php">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=sdk-php&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/cli">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=cli&show_icons=true">
+  </picture>
+</a>
+<a href="https://github.com/temporalio/ai-cookbook">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=ai-cookbook&show_icons=true&theme=dark">
+    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=ai-cookbook&show_icons=true">
+    <img src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=temporalio&repo=ai-cookbook&show_icons=true">
+  </picture>
+</a>
