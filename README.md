@@ -20,7 +20,8 @@ This is the default file for all Temporal OSS repos. Primarily we offer:
 `changelog.yml` verifies that a pull request adds to a `CHANGELOG.md` only
 within its Unreleased section. Repositories retain a small caller workflow so
 label changes can rerun the check and the `skip-changelog` override remains
-available.
+available. Callers grant `contents: read` for checkout and `pull-requests: read`
+so the shared workflow can read the pull request's current labels.
 
 
 ## Why do this
