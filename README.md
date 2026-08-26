@@ -1,6 +1,9 @@
-# Temporal default .github files
+# Temporal organization GitHub configuration
 
-Temporal's default community health files. See docs: https://docs.github.com/en/github/building-a-strong-community/creating-a-default-community-health-file
+Temporal's default community health files and shared GitHub Actions workflows.
+See GitHub's documentation on
+[default community health files](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
+and [reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows).
 
 
 ## What is this
@@ -9,7 +12,15 @@ This is the default file for all Temporal OSS repos. Primarily we offer:
 
 - 2 basic issue templates, covering Bug Report and Feature Requests
 - 1 PR template, reminding the contributor to file an issue first
+- Shared workflows for checks used across multiple Temporal repositories
 - in future, we may add [CONTRIBUTING.md](https://github.com/OctoPrint/OctoPrint/blob/master/CONTRIBUTING.md?WT.mc_id=-blog-scottha) and SECURITY.md
+
+## Shared workflows
+
+`changelog.yml` verifies that a pull request adds to a `CHANGELOG.md` only
+within its Unreleased section. Repositories retain a small caller workflow so
+label changes can rerun the check and the `skip-changelog` override remains
+available.
 
 
 ## Why do this

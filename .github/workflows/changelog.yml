@@ -1,0 +1,75 @@
+name: Changelog check
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  changelog-check:
+    name: Changelog checkpoint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Require Unreleased CHANGELOG.md additions or override label
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }}
+        run: |
+          set -euo pipefail
+
+          if grep -q '"skip-changelog"' <<< "$LABELS"; then
+            echo "Found 'skip-changelog' label; no CHANGELOG.md entry required."
+            exit 0
+          fi
+
+          # Inspect GitHub's synthetic merge result so a release merged after the PR
+          # opened cannot leave the PR's entry under the newly released version.
+          mapfile -d '' changelogs < <(
+            git diff --name-only -z --diff-filter=ACMR "$BASE_SHA" HEAD \
+              -- ':(glob)**/CHANGELOG.md'
+          )
+          additions_found=false
+          invalid_additions=false
+
+          for changelog in "${changelogs[@]}"; do
+            while read -r start count; do
+              count=${count:-1}
+              if (( count == 0 )); then
+                continue
+              fi
+              additions_found=true
+              end=$((start + count - 1))
+              if ! git show "HEAD:$changelog" | awk \
+                -v path="$changelog" -v first="$start" -v last="$end" '
+                  /^##[[:space:]]/ {
+                    heading = tolower($0)
+                    unreleased = heading ~ /^##[[:space:]]+(\[unreleased\]|unreleased)([[:space:]]|$)/
+                  }
+                  NR >= first && NR <= last && !unreleased && !reported {
+                    printf "::error file=%s,line=%d::CHANGELOG.md additions must be under the Unreleased section.\n", path, NR
+                    reported = 1
+                  }
+                  END { exit reported }
+                '; then
+                invalid_additions=true
+              fi
+            done < <(
+              git diff --unified=0 --no-color "$BASE_SHA" HEAD -- "$changelog" \
+                | sed -nE 's/^@@ -[0-9]+(,[0-9]+)? \+([0-9]+)(,([0-9]+))? @@.*/\2 \4/p'
+            )
+          done
+
+          if [[ "$invalid_additions" == true ]]; then
+            exit 1
+          fi
+          if [[ "$additions_found" == true ]]; then
+            echo "All CHANGELOG.md additions are under the Unreleased section."
+            exit 0
+          fi
+
+          echo "::error::This PR does not add an entry to a CHANGELOG.md. If it includes a user-facing change, add an entry under Unreleased in the appropriate CHANGELOG.md. If no changelog entry is needed, a maintainer can apply the 'skip-changelog' label."
+          exit 1
