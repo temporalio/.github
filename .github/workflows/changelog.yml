@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 jobs:
   changelog-check:
@@ -17,11 +18,16 @@ jobs:
       - name: Require Unreleased CHANGELOG.md additions or override label
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          LABELS: ${{ toJSON(github.event.pull_request.labels.*.name) }}
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
 
-          if grep -q '"skip-changelog"' <<< "$LABELS"; then
+          # Pull request events can run out of order, so use the current labels
+          # rather than the labels captured when this event was created.
+          labels=$(gh api "repos/$REPO/pulls/$PR_NUMBER" --jq '.labels[].name')
+          if grep -Fxq 'skip-changelog' <<< "$labels"; then
             echo "Found 'skip-changelog' label; no CHANGELOG.md entry required."
             exit 0
           fi
