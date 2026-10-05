@@ -1,0 +1,55 @@
+name: Changelog fragment check
+
+on:
+  workflow_call:
+    inputs:
+      sdk-rust-path:
+        description: Path to the pinned sdk-rust checkout; use '.' in sdk-rust itself
+        required: true
+        type: string
+      fragments-directory:
+        description: Repository-relative directory containing category folders
+        default: changelog
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  changelog-check:
+    name: Changelog checkpoint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check current override label
+        id: override
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # Events may arrive out of order; query the current labels.
+          labels=$(gh api "repos/$REPO/pulls/$PR_NUMBER" --jq '.labels[].name')
+          if grep -Fxq 'skip-changelog' <<< "$labels"; then
+            echo 'skip=true' >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        if: steps.override.outputs.skip != 'true'
+        with:
+          fetch-depth: 0
+          submodules: true
+      - uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
+        if: steps.override.outputs.skip != 'true'
+      - name: Require and validate category fragments
+        if: steps.override.outputs.skip != 'true'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          SDK_RUST_PATH: ${{ inputs.sdk-rust-path }}
+          FRAGMENTS_DIRECTORY: ${{ inputs.fragments-directory }}
+        run: |
+          set -euo pipefail
+          cargo run --quiet \
+            --manifest-path "$SDK_RUST_PATH/crates/changelog-release-notes/Cargo.toml" \
+            --bin changelog-tool -- check --repo "$GITHUB_WORKSPACE" \
+            --fragments "$FRAGMENTS_DIRECTORY" --base "$BASE_SHA" --require-new

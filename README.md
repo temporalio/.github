@@ -23,6 +23,18 @@ label changes can rerun the check and the `skip-changelog` override remains
 available. Callers grant `contents: read` for checkout and `pull-requests: read`
 so the shared workflow can read the pull request's current labels.
 
+`changelog-fragments.yml` is the alternative for SDKs migrating to per-PR
+Markdown fragments. It uses the caller's pinned sdk-rust `changelog-tool`, requires
+a new fragment in a category folder, and validates pending fragments. The existing
+`changelog.yml` remains available for repositories that have not migrated.
+
+Pass `sdk-rust-path` (the submodule path, or `.` in sdk-rust itself) and optionally
+`fragments-directory` (default `changelog`). Callers retain the pull request event
+types `opened`, `synchronize`, `reopened`, `labeled`, and `unlabeled`, the same read
+permissions, and the `skip-changelog` override. Pin the workflow to a reviewed
+commit, and update the caller's sdk-rust pin to a revision containing the tool
+before switching workflows.
+
 
 ## Why do this
 
