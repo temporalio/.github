@@ -35,6 +35,11 @@ permissions, and the `skip-changelog` override. Pin the workflow to a reviewed
 commit, and update the caller's sdk-rust pin to a revision containing the tool
 before switching workflows.
 
+Repositories without a Core submodule can pass `sdk-rust-revision` with a pinned
+SDK Rust commit and set `sdk-rust-path` to a separate directory, such as
+`.changelog-tool`. The workflow checks out that revision there and builds only
+the shared changelog CLI. Existing submodule callers omit this input.
+
 
 ## Why do this
 
