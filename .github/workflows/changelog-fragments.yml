@@ -7,6 +7,10 @@ on:
         description: Path to the pinned sdk-rust checkout; use '.' in sdk-rust itself
         required: true
         type: string
+      sdk-rust-revision:
+        description: Optional pinned SDK Rust revision to check out at sdk-rust-path for repositories without a Core submodule
+        default: ''
+        type: string
       fragments-directory:
         description: Repository-relative directory containing category folders
         default: changelog
@@ -39,6 +43,13 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
+      - name: Check out shared changelog tool
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        if: steps.override.outputs.skip != 'true' && inputs.sdk-rust-revision != ''
+        with:
+          repository: temporalio/sdk-rust
+          ref: ${{ inputs.sdk-rust-revision }}
+          path: ${{ inputs.sdk-rust-path }}
       - uses: dtolnay/rust-toolchain@29eef336d9b2848a0b548edc03f92a220660cdb8 # stable
         if: steps.override.outputs.skip != 'true'
       - name: Require and validate category fragments
