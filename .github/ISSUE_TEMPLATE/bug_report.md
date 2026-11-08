@@ -18,6 +18,10 @@ Tell us at a high level what you're doing, to avoid XY problem (https://en.wikip
 
 <!-- If applicable, add screenshots or code blocks to help explain your problem. You can also use [Loom](http://loom.com/) to do short, free video bug reports. -->
 
+### How did you hit this issue?
+
+<!-- It is helpful for maintainers to understand how this issue was hit, and if it affects user production, in respect to prioritizing new bug reports. -->
+
 ### Minimal Reproduction
 
 <!-- 
