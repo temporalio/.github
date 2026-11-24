@@ -153,7 +153,7 @@ def main() -> None:
     for name in REPOSITORIES:
         repository = fetch_repository(name)
         for theme_name, theme in THEMES.items():
-            destination = OUTPUT_DIR / f"{name}-{theme_name}.svg"
+            destination = OUTPUT_DIR / f"{name}-{theme_name}-v2.svg"
             destination.write_text(render_card(repository, theme), encoding="utf-8")
         print(f"Generated cards for {name}")
 
