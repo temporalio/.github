@@ -116,7 +116,7 @@ def render_card(repository: dict[str, object], theme: dict[str, str]) -> str:
     stars = shorten_count(int(repository.get("stargazers_count") or 0))
     forks = shorten_count(int(repository.get("forks_count") or 0))
     description_svg = "\n".join(
-        f'<text x="42" y="{60 + index * 16}" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{html.escape(line)}</text>'
+        f'<text x="42" y="{56 + index * 13}" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{html.escape(line)}</text>'
         for index, line in enumerate(description)
     )
 
@@ -130,17 +130,17 @@ def render_card(repository: dict[str, object], theme: dict[str, str]) -> str:
   </g>
   <text x="42" y="34" fill="{theme["title"]}" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600">{full_name}</text>
   {description_svg}
-  <circle cx="21" cy="101" r="5" fill="{language_color}"/>
-  <text x="32" y="105" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="11.5">{language}</text>
-  <path d="m157 92 3.2 6.4 7.1 1-5.1 5 1.2 7.1-6.4-3.4-6.4 3.4 1.2-7.1-5.1-5 7.1-1z" transform="translate(48 31) scale(0.67)" fill="none" stroke="{theme["muted"]}" stroke-linejoin="round" stroke-width="1.7"/>
-  <text x="164" y="105" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{stars}</text>
-  <g transform="translate(242 91) scale(0.75)" fill="none" stroke="{theme["muted"]}" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7">
+  <circle cx="21" cy="84" r="5" fill="{language_color}"/>
+  <text x="32" y="87" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="11.5">{language}</text>
+  <path d="m157 92 3.2 6.4 7.1 1-5.1 5 1.2 7.1-6.4-3.4-6.4 3.4 1.2-7.1-5.1-5 7.1-1z" transform="translate(48 15) scale(0.67)" fill="none" stroke="{theme["muted"]}" stroke-linejoin="round" stroke-width="1.7"/>
+  <text x="164" y="87" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{stars}</text>
+  <g transform="translate(242 76) scale(0.75)" fill="none" stroke="{theme["muted"]}" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7">
     <circle cx="4" cy="4" r="2.4"/>
     <circle cx="16" cy="4" r="2.4"/>
     <circle cx="4" cy="16" r="2.4"/>
     <path d="M4 6.5v7M16 6.5a6 6 0 0 1-6 6H6.5"/>
   </g>
-  <text x="260" y="105" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{forks}</text>
+  <text x="260" y="87" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{forks}</text>
 </svg>
 '''
 
@@ -150,7 +150,7 @@ def main() -> None:
     for name in REPOSITORIES:
         repository = fetch_repository(name)
         for theme_name, theme in THEMES.items():
-            destination = OUTPUT_DIR / f"{name}-{theme_name}-v3.svg"
+            destination = OUTPUT_DIR / f"{name}-{theme_name}-v4.svg"
             destination.write_text(render_card(repository, theme), encoding="utf-8")
         print(f"Generated cards for {name}")
 
