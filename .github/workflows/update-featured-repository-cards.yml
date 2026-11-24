@@ -31,7 +31,6 @@ jobs:
           - cli
           - ai-cookbook
     permissions:
-      actions: write
       contents: read
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -70,7 +69,6 @@ jobs:
     needs: generate
     runs-on: ubuntu-latest
     permissions:
-      actions: read
       contents: write
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
