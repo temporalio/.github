@@ -29,6 +29,19 @@ REPOSITORIES = (
 OUTPUT_DIR = Path(__file__).resolve().parents[2] / "profile" / "repository-cards"
 API_ROOT = "https://api.github.com/repos"
 
+LANGUAGE_COLORS = {
+    "Go": "#00ADD8",
+    "Java": "#b07219",
+    "TypeScript": "#3178c6",
+    "Python": "#3572A5",
+    "C#": "#178600",
+    "Ruby": "#701516",
+    "Rust": "#dea584",
+    "PHP": "#4F5D95",
+    "JavaScript": "#f1e05a",
+    "Jupyter Notebook": "#DA5B0B",
+}
+
 THEMES = {
     "light": {
         "background": "#ffffff",
@@ -36,7 +49,8 @@ THEMES = {
         "title": "#0969da",
         "text": "#24292f",
         "muted": "#57606a",
-        "accent": "#8250df",
+        "accent": "#fb8c00",
+        "fallback_language": "#8c959f",
     },
     "dark": {
         "background": "#0d1117",
@@ -44,7 +58,8 @@ THEMES = {
         "title": "#58a6ff",
         "text": "#c9d1d9",
         "muted": "#8b949e",
-        "accent": "#bc8cff",
+        "accent": "#f0883e",
+        "fallback_language": "#8b949e",
     },
 }
 
@@ -87,7 +102,7 @@ def shorten_count(value: int) -> str:
 
 
 def description_lines(description: str) -> list[str]:
-    lines = textwrap.wrap(description, width=68, break_long_words=True, break_on_hyphens=False)
+    lines = textwrap.wrap(description, width=46, break_long_words=True, break_on_hyphens=False)
     if len(lines) > 2:
         lines = lines[:2]
         lines[1] = lines[1].rstrip(" .") + "…"
@@ -95,28 +110,40 @@ def description_lines(description: str) -> list[str]:
 
 
 def render_card(repository: dict[str, object], theme: dict[str, str]) -> str:
-    name = str(repository["name"])
-    full_name = str(repository["full_name"])
-    title = html.escape(full_name)
+    full_name = html.escape(str(repository["full_name"]))
     description = description_lines(str(repository.get("description") or ""))
-    language = html.escape(str(repository.get("language") or "Other"))
+    language_name = str(repository.get("language") or "Other")
+    language = html.escape(language_name)
+    language_color = LANGUAGE_COLORS.get(language_name, theme["fallback_language"])
     stars = shorten_count(int(repository.get("stargazers_count") or 0))
     forks = shorten_count(int(repository.get("forks_count") or 0))
     description_svg = "\n".join(
-        f'<text x="20" y="{64 + index * 18}" fill="{theme["muted"]}" font-size="13">{html.escape(line)}</text>'
+        f'<text x="42" y="{60 + index * 16}" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="13">{html.escape(line)}</text>'
         for index, line in enumerate(description)
     )
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="490" height="124" viewBox="0 0 490 124" role="img" aria-labelledby="title">
-  <title id="title">{title} repository card</title>
-  <rect x="0.5" y="0.5" width="489" height="123" rx="6" fill="{theme["background"]}" stroke="{theme["border"]}"/>
-  <circle cx="27" cy="29" r="8" fill="{theme["accent"]}"/>
-  <text x="44" y="34" fill="{theme["title"]}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI, sans-serif" font-size="16" font-weight="600">{title}</text>
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120" role="img" aria-labelledby="title">
+  <title id="title">{full_name} repository card</title>
+  <rect x="0.5" y="0.5" width="399" height="119" rx="6" fill="{theme["background"]}" stroke="{theme["border"]}"/>
+  <g transform="translate(20 18)" fill="none" stroke="{theme["muted"]}" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7">
+    <path d="M3 1.5h10a2 2 0 0 1 2 2v15H5a3 3 0 0 1-3-3v-12a2 2 0 0 1 1-2z"/>
+    <path d="M2 14.5a3 3 0 0 1 3-3h10.5"/>
+    <path d="M11.5 11.5v7"/>
+  </g>
+  <text x="42" y="34" fill="{theme["title"]}" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600">{full_name}</text>
+  <path d="M30 49 23 58h5l-1 8 8-11h-5l2-6z" fill="{theme["accent"]}"/>
   {description_svg}
-  <circle cx="24" cy="104" r="4" fill="{theme["accent"]}"/>
-  <text x="34" y="109" fill="{theme["text"]}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI, sans-serif" font-size="12">{language}</text>
-  <text x="190" y="109" fill="{theme["muted"]}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI, sans-serif" font-size="12">Stars {stars}</text>
-  <text x="300" y="109" fill="{theme["muted"]}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI, sans-serif" font-size="12">Forks {forks}</text>
+  <circle cx="21" cy="101" r="5" fill="{language_color}"/>
+  <text x="32" y="105" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{language}</text>
+  <path d="m157 92 3.2 6.4 7.1 1-5.1 5 1.2 7.1-6.4-3.4-6.4 3.4 1.2-7.1-5.1-5 7.1-1z" fill="none" stroke="{theme["muted"]}" stroke-linejoin="round" stroke-width="1.7"/>
+  <text x="171" y="105" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{stars}</text>
+  <g transform="translate(242 91)" fill="none" stroke="{theme["muted"]}" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7">
+    <circle cx="4" cy="4" r="2.4"/>
+    <circle cx="16" cy="4" r="2.4"/>
+    <circle cx="4" cy="16" r="2.4"/>
+    <path d="M4 6.5v7M16 6.5a6 6 0 0 1-6 6H6.5"/>
+  </g>
+  <text x="265" y="105" fill="{theme["muted"]}" font-family="Arial,Helvetica,sans-serif" font-size="12">{forks}</text>
 </svg>
 '''
 
